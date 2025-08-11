@@ -69,12 +69,11 @@ export const questions: Question[] = [
     title: "![] == 0",
     code: `console.log(![] == 0);`,
     options: ["true", "false", '"false"', "undefined"],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: `![] == 0 进行相等比较：
 • ![] 转换为 false
 • false == 0 比较时，false 转为数字 0
-• 0 == 0 为 true
-等等，这里应该是 true，让我修正...`,
+• 0 == 0 为 true`,
     category: "相等比较",
     difficulty: 'medium'
   },
